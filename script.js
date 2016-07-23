@@ -5,5 +5,7 @@ $(document).ready(function() {
 function background(){
     $("h1").animate({
         backgroundSize: "75%"
-    }, 10000, "linear" );
+    }, 10000, "linear", function() {
+        $(".arrow, .instructions").fadeIn(500);
+    });
 }

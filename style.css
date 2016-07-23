@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Assistant:300";
+@import "https://fonts.googleapis.com/css?family=Assistant:300,600";
 
 body { 
     background: url("assets/watercolor-paper-texture.jpg") no-repeat 50% 50% fixed; 
@@ -7,15 +7,21 @@ body {
     -o-background-size: cover;
     -webkit-background-size: cover;
     font-size: 16px;
-    font-family: 'Garamond', sans-serif;
+    font-family: "Assistant", sans-serif;
   }
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
 
 #wrapper {
   	width: 80%;	
   	max-width: 900px;
     margin: auto;
     position: absolute;
-    top: 47%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 } 
@@ -25,6 +31,7 @@ h1 {
 	display: block;
 	margin: 0 auto;
     text-align: center;
+    font-family: 'Garamond', sans-serif;
     font-size: 6em;
     font-weight: 700;
     letter-spacing: .2em;
@@ -41,13 +48,26 @@ h2 {
     transform: translate(-50%, -50%);
     font-family: "Assistant", sans-serif;
     font-size: 1.5em;
+    font-weight: 300;
     letter-spacing: .2em;
     text-transform: uppercase;
     color: #AAAAAA;
 }
 
+.instructions {
+    font-family: 'Garamond', sans-serif;
+    font-size: 1em;
+    letter-spacing: .1em;
+    font-style: italic;
+    color: #AAAAAA;
+    position: absolute;
+    top: 84%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: none;
+}
+
 h1 {
-/* Clip Background Image */
     color: #CCCCCC;
 	background: url("assets/dot.png") no-repeat, -webkit-linear-gradient(transparent, transparent);
     background: -o-linear-gradient(transparent, transparent); 
@@ -55,4 +75,86 @@ h1 {
     background-size: 1%;
     -webkit-text-fill-color: transparent;
     background-position: center;
+}
+
+h3 {
+    font-family: "Garamond", sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+
+h4 {
+    font-family: "Assistant", sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #AAAAAA;
+    text-align: center;
+    width: 70%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.number {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-family: 'Garamond', sans-serif;
+    font-size: 1em;
+    letter-spacing: .1em;
+    font-style: italic;
+    color: #AAAAAA;
+/*    position: absolute;
+    top: 84%;
+    left: 50%;
+    transform: translate(-50%, 0); */
+}
+
+.arrow {
+    width:0px;
+    height:0px;
+    border-left: 1em solid transparent;
+    border-right: 1em solid transparent;
+    border-top: 1em solid #CCCCCC;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: none;
+}
+
+.container2 {
+    position: relative;
+    width: 100vw;
+}
+
+.explain {
+    width: 50%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.test {
+    width: 7%
+}
+
+.sources {
+    position: absolute;
+    color: #fff;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.sources a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sources a:hover {
+    color: #CCCCCC;
 }
