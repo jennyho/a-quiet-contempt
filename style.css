@@ -1,0 +1,58 @@
+@import "https://fonts.googleapis.com/css?family=Assistant:300";
+
+body { 
+    background: url("assets/watercolor-paper-texture.jpg") no-repeat 50% 50% fixed; 
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    font-size: 16px;
+    font-family: 'Garamond', sans-serif;
+  }
+
+#wrapper {
+  	width: 80%;	
+  	max-width: 900px;
+    margin: auto;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+h1 { 
+    position:relative;
+	display: block;
+	margin: 0 auto;
+    text-align: center;
+    font-size: 6em;
+    font-weight: 700;
+    letter-spacing: .2em;
+    color: #CCCCCC;
+}
+
+h2 {
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    top: 75%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    font-family: "Assistant", sans-serif;
+    font-size: 1.5em;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #AAAAAA;
+}
+
+h1 {
+/* Clip Background Image */
+    color: #CCCCCC;
+	background: url("assets/dot.png") no-repeat, -webkit-linear-gradient(transparent, transparent);
+    background: -o-linear-gradient(transparent, transparent); 
+	-webkit-background-clip: text;
+    background-size: 1%;
+    -webkit-text-fill-color: transparent;
+    background-position: center;
+}
