@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Assistant:300,600";
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700';
 
 body { 
     background: url("assets/watercolor-paper-texture.jpg") no-repeat 50% 50% fixed; 
@@ -7,7 +7,11 @@ body {
     -o-background-size: cover;
     -webkit-background-size: cover;
     font-size: 16px;
-    font-family: "Assistant", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+    font-weight: 300;
+    padding: 0;
+    overflow-x: hidden;
   }
 
 .container {
@@ -31,11 +35,11 @@ h1 {
 	display: block;
 	margin: 0 auto;
     text-align: center;
-    font-family: 'Garamond', sans-serif;
+    font-family: "Garamond", sans-serif;
     font-size: 6em;
     font-weight: 700;
     letter-spacing: .2em;
-    color: #CCCCCC;
+    color: #AAAAAA;
 }
 
 h2 {
@@ -46,7 +50,7 @@ h2 {
     left: 50%;
     width: 80%;
     transform: translate(-50%, -50%);
-    font-family: "Assistant", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.5em;
     font-weight: 300;
     letter-spacing: .2em;
@@ -55,7 +59,7 @@ h2 {
 }
 
 .instructions {
-    font-family: 'Garamond', sans-serif;
+    font-family: "Garamond", sans-serif;
     font-size: 1em;
     letter-spacing: .1em;
     font-style: italic;
@@ -80,13 +84,13 @@ h1 {
 h3 {
     font-family: "Garamond", sans-serif;
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 300;
     text-align: center;
     color: #fff;
 }
 
 h4 {
-    font-family: "Assistant", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.5em;
     font-weight: 300;
     color: #AAAAAA;
@@ -97,8 +101,9 @@ h4 {
 }
 
 .number {
-    font-size: 2em;
-    font-weight: 600;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 2.5em;
+    font-weight: 400;
 }
 
 .subtitle {
@@ -114,8 +119,8 @@ h4 {
 }
 
 .arrow {
-    width:0px;
-    height:0px;
+    width: 0px;
+    height: 0px;
     border-left: 1em solid transparent;
     border-right: 1em solid transparent;
     border-top: 1em solid #CCCCCC;
@@ -141,20 +146,274 @@ h4 {
     width: 7%
 }
 
+/*conclusion*/
+.conclusion {
+    width: 50%;
+    font-size: 1.5em;
+    line-height: 2em;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*sources*/
 .sources {
     position: absolute;
-    color: #fff;
+    color: #111111;
     width: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%)
 }
 
+.sources h3 {
+    color: #111111;
+    text-align: left;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+}
+
 .sources a {
-    color: #fff;
+    color: #111111;
     text-decoration: none;
 }
 
 .sources a:hover {
-    color: #CCCCCC;
+    color: #AAAAAA;
+}
+
+
+/*line visualization*/
+.line-vis {
+    position: absolute;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translate(0, -50%);
+}
+
+.vertical-line {
+    width: 2px;
+    background-color: #AAAAAA;
+    height: 100%;
+    margin-left: 2px;
+}
+
+.horizontal-line {
+    height: 2px;
+    width: 11px;
+    background-color: #AAAAAA;
+    margin-left: -3px;
+}
+
+#p0 {
+    position: absolute;
+    top: 0%;
+}
+
+#p100 {
+    position: absolute;
+    top: 100%;
+}
+
+.point {
+    background: #000;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    opacity: .3;
+    margin-left: -1px;
+}
+
+#pt1 {
+    position: absolute;
+    top: 7%;
+    transform: translate(0, -50%);
+}
+
+#pt2 {
+    position: absolute;
+    top: 8%;
+    transform: translate(0, -50%);
+}
+
+#pt3 {
+    position: absolute;
+    top: 9%;
+    transform: translate(0, -50%);
+}
+
+#pt4 {
+    position: absolute;
+    top: 10%;
+    transform: translate(0, -50%);
+}
+
+#pt5 {
+    position: absolute;
+    top: 14%;
+    transform: translate(0, -50%);
+}
+
+#pt6 {
+    position: absolute;
+    top: 16%;
+    transform: translate(0, -50%);
+}
+
+#pt7 {
+    position: absolute;
+    top: 19%;
+    transform: translate(0, -50%);
+}
+
+#pt8 {
+    position: absolute;
+    top: 22%;
+    transform: translate(0, -50%);
+}
+
+#pt9 {
+    position: absolute;
+    top: 22.5%;
+    transform: translate(0, -50%);
+}
+
+#pt10 {
+    position: absolute;
+    top: 23%;
+    transform: translate(0, -50%);
+}
+
+#pt11 {
+    position: absolute;
+    top: 25%;
+    transform: translate(0, -50%);
+}
+
+#pt12 {
+    position: absolute;
+    top: 28%;
+    transform: translate(0, -50%);
+}
+
+#pt13 {
+    position: absolute;
+    top: 29%;
+    transform: translate(0, -50%);
+}
+
+#pt14 {
+    position: absolute;
+    top: 33%;
+    transform: translate(0, -50%);
+}
+
+#pt15 {
+    position: absolute;
+    top: 33.5%;
+    transform: translate(0, -50%);
+}
+
+#pt16 {
+    position: absolute;
+    top: 34%;
+    transform: translate(0, -50%);
+}
+
+#pt17 {
+    position: absolute;
+    top: 36%;
+    transform: translate(0, -50%);
+}
+
+#pt18 {
+    position: absolute;
+    top: 36.5%;
+    transform: translate(0, -50%);
+}
+
+#pt19 {
+    position: absolute;
+    top: 38%;
+    transform: translate(0, -50%);
+}
+
+#pt20 {
+    position: absolute;
+    top: 38.5%;
+    transform: translate(0, -50%);
+}
+
+#pt21 {
+    position: absolute;
+    top: 40%;
+    transform: translate(0, -50%);
+}
+
+#pt22 {
+    position: absolute;
+    top: 42%;
+    transform: translate(0, -50%);
+}
+
+#pt23 {
+    position: absolute;
+    top: 43%;
+    transform: translate(0, -50%);
+}
+
+#pt24 {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#pt25 {
+    position: absolute;
+    top: 50.5%;
+    transform: translate(0, -50%);
+}
+
+#pt26 {
+    position: absolute;
+    top: 57%;
+    transform: translate(0, -50%);
+}
+
+#pt27 {
+    position: absolute;
+    top: 70%;
+    transform: translate(0, -50%);
+}
+
+#pt28 {
+    position: absolute;
+    top: 76%;
+    transform: translate(0, -50%);
+}
+
+#percent0, #percent100  {
+    font-family: 'Garamond', sans-serif;
+    font-size: .85em;
+    line-height: .85em;
+    letter-spacing: .1em;
+    font-style: italic;
+    color: #AAAAAA;
+    white-space: nowrap;
+}
+
+#percent0{
+    position: absolute;
+    top: 0%;
+    transform: translate(25%, -150%)
+}
+
+#percent100{
+    position: absolute;
+    top: 100%;
+    transform: translate(25%, -150%)
 }
