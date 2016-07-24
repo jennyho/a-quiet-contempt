@@ -20,18 +20,18 @@ body {
     position: relative;
 }
 
+/*title page*/
 #wrapper {
   	width: 80%;	
   	max-width: 900px;
     margin: auto;
-    position: absolute;
-    top: 45%;
+    position: fixed;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 } 
 
 h1 { 
-    position:relative;
 	display: block;
 	margin: 0 auto;
     text-align: center;
@@ -43,7 +43,7 @@ h1 {
 }
 
 h2 {
-    position: absolute;
+    position: fixed;
     margin: 0 auto;
     text-align: center;
     top: 75%;
@@ -64,8 +64,21 @@ h2 {
     letter-spacing: .1em;
     font-style: italic;
     color: #AAAAAA;
-    position: absolute;
+    position: fixed;
     top: 84%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: none;
+}
+
+.arrow {
+    width: 0px;
+    height: 0px;
+    border-left: 1em solid transparent;
+    border-right: 1em solid transparent;
+    border-top: 1em solid #AAAAAA;
+    position: fixed;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, 0);
     display: none;
@@ -81,12 +94,24 @@ h1 {
     background-position: center;
 }
 
+/*content*/
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    position: fixed;
+}
+
 h3 {
     font-family: "Garamond", sans-serif;
     font-size: 2em;
     font-weight: 300;
     text-align: center;
     color: #fff;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 h4 {
@@ -95,9 +120,32 @@ h4 {
     font-weight: 300;
     color: #AAAAAA;
     text-align: center;
-    width: 70%;
+    width: 100%;
     max-width: 800px;
     margin: 0 auto;
+    position: fixed;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.explain {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    color: #fff;
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.test1 {
+    width: 1%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .number {
@@ -118,33 +166,6 @@ h4 {
     transform: translate(-50%, 0); */
 }
 
-.arrow {
-    width: 0px;
-    height: 0px;
-    border-left: 1em solid transparent;
-    border-right: 1em solid transparent;
-    border-top: 1em solid #CCCCCC;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    display: none;
-}
-
-.container2 {
-    position: relative;
-    width: 100vw;
-}
-
-.explain {
-    width: 50%;
-    margin: 0 auto;
-    color: #fff;
-}
-
-.test {
-    width: 7%
-}
 
 /*conclusion*/
 .conclusion {
