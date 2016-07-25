@@ -181,23 +181,12 @@ h4 {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 1.2em;
     line-height: 1.4em;
-    font-weight: 400;
+    font-weight: 300;
     color: #fff;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-/*add texture*/
-.conclusion {
-    color: #CCCCCC;
-	background: url("assets/dot.png") no-repeat, -webkit-linear-gradient(transparent, transparent);
-    background: -o-linear-gradient(transparent, transparent); 
-	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-position: center;
-    background-size: 120%;
 }
 
 
