@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 function background(){
     $("h1").animate({
-        backgroundSize: "75%"
+        backgroundSize: "90%"
     }, 10000, "linear", function() {
         $(".arrow, .instructions").fadeIn(500);
     });
