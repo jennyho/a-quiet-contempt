@@ -214,7 +214,7 @@ h4 {
     position: fixed;
     color: #111111;
     width: 50%;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%)
 }
@@ -379,7 +379,7 @@ h4 {
 
 #pt13 {
     position: absolute;
-    top: 29%;
+    top: 28.5%;
     transform: translate(0, -50%);
 }
 
