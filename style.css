@@ -22,8 +22,8 @@ body {
 
 /*title page*/
 #wrapper {
-  	width: 80%;	
-  	max-width: 900px;
+  	width: 85%;
+    max-width: 800px;
     margin: auto;
     position: fixed;
     top: 50%;
@@ -60,7 +60,6 @@ h2 {
 
 .instructions {
     font-family: "Garamond", sans-serif;
-    font-size: 1em;
     letter-spacing: .1em;
     font-style: italic;
     color: #AAAAAA;
@@ -94,6 +93,8 @@ h1 {
     background-position: center;
 }
 
+
+
 /*content*/
 .background {
     width: 100vw;
@@ -103,11 +104,11 @@ h1 {
 }
 
 h3 {
-    font-family: "Garamond", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 2em;
     font-weight: 300;
     text-align: center;
-    color: #fff;
+    color: #AAAAAA;
     position: fixed;
     top: 45%;
     left: 50%;
@@ -121,7 +122,7 @@ h4 {
     color: #AAAAAA;
     text-align: center;
     width: 100%;
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
     position: fixed;
     top: 85%;
@@ -134,6 +135,7 @@ h4 {
     line-height: 1.4em;
     color: #fff;
     width: 50%;
+    max-width: 550px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -148,40 +150,68 @@ h4 {
     transform: translate(-50%, -50%);
 }
 
-.number {
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 2.5em;
-    font-weight: 400;
-}
-
-.subtitle {
-    font-family: 'Garamond', sans-serif;
-    font-size: 1em;
-    letter-spacing: .1em;
-    font-style: italic;
-    color: #AAAAAA;
-/*    position: absolute;
-    top: 84%;
-    left: 50%;
-    transform: translate(-50%, 0); */
-}
-
-
-/*conclusion*/
-.conclusion {
-    width: 50%;
-    font-size: 1.5em;
-    line-height: 2em;
-    color: #fff;
-    position: absolute;
+.test2 {
+    width: 1%;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+.subtitle {
+    font-family: "Garamond", sans-serif;
+    font-size: 1em;
+    letter-spacing: .1em;
+    font-style: italic;
+    color: #AAAAAA;
+    position: fixed;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, 0); 
+}
+
+.number {
+    font-family: "Garamond", sans-serif;
+    font-size: 2.5em;
+    font-weight: 400;
+    top: 8%;
+}
+
+
+
+
+/*conclusion*/
+.conclusion {
+    width: 50%;
+    max-width: 550px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    font-weight: 400;
+    color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*add texture*/
+.conclusion {
+    color: #CCCCCC;
+	background: url("assets/dot.png") no-repeat, -webkit-linear-gradient(transparent, transparent);
+    background: -o-linear-gradient(transparent, transparent); 
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: center;
+    background-size: 120%;
+}
+
+
+
+
 /*sources*/
-.sources {
-    position: absolute;
+#sources {
+    position: fixed;
     color: #111111;
     width: 50%;
     top: 50%;
@@ -189,30 +219,33 @@ h4 {
     transform: translate(-50%, -50%)
 }
 
-.sources h3 {
+#sources h3 {
     color: #111111;
     text-align: left;
     font-family: "Roboto Condensed", sans-serif;
-    font-weight: 700;
+    font-size: 1.5em;
+    font-weight: 400;
+    top: -20%;
 }
 
-.sources a {
+#sources a {
     color: #111111;
     text-decoration: none;
 }
 
-.sources a:hover {
+#sources a:hover {
     color: #AAAAAA;
 }
 
 
+
+
 /*line visualization*/
 .line-vis {
-    position: absolute;
-    height: 80%;
-    position: absolute;
+    position: fixed;
+    height: 85%;
     top: 50%;
-    left: 3%;
+    right: 5%;
     transform: translate(0, -50%);
 }
 
@@ -225,28 +258,51 @@ h4 {
 
 .horizontal-line {
     height: 2px;
-    width: 11px;
+    width: 10px;
     background-color: #AAAAAA;
-    margin-left: -3px;
+    margin-left: -50%;
 }
 
-#p0 {
+#line0 {
     position: absolute;
     top: 0%;
 }
 
-#p100 {
+#line100 {
     position: absolute;
+    top: 100%;
+}
+
+#percent0, #percent100 {
+    position: absolute;
+    right: 15px;
+    transform: translate(0, -160%);
+    font-family: 'Garamond', sans-serif;
+    font-size: .8em;
+    line-height: .8em;
+    letter-spacing: .1em;
+    font-style: italic;
+    color: #AAAAAA;
+    text-align: right;
+    letter-spacing: .1em;
+    white-space: nowrap;
+}
+
+#percent0 {
+    top: 0%;
+}
+
+#percent100 {
     top: 100%;
 }
 
 .point {
     background: #000;
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    opacity: .3;
-    margin-left: -1px;
+    opacity: .2;
+    margin-left: -50%;
 }
 
 #pt1 {
@@ -415,26 +471,4 @@ h4 {
     position: absolute;
     top: 76%;
     transform: translate(0, -50%);
-}
-
-#percent0, #percent100  {
-    font-family: 'Garamond', sans-serif;
-    font-size: .85em;
-    line-height: .85em;
-    letter-spacing: .1em;
-    font-style: italic;
-    color: #AAAAAA;
-    white-space: nowrap;
-}
-
-#percent0{
-    position: absolute;
-    top: 0%;
-    transform: translate(25%, -150%)
-}
-
-#percent100{
-    position: absolute;
-    top: 100%;
-    transform: translate(25%, -150%)
 }
