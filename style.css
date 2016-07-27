@@ -178,6 +178,7 @@ p {
 #sources {
     position: fixed;
     width: 50%;
+    max-width: 550px;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%)
