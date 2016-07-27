@@ -191,7 +191,7 @@ p {
     top: -20%;
 }
 
-#sources a {
+#sources a, #sources p {
     font-family: "Roboto Condensed", sans-serif;
     font-style: normal;
     color: #111111;
