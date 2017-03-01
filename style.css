@@ -35,11 +35,11 @@ body {
 h1 { 
 	display: block;
 	margin: 0 auto;
-    text-align: center;
-    font-family: "Garamond", serif;
-    font-size: 6em;
-    font-weight: 700;
-    letter-spacing: .2em;
+    	text-align: center;
+	font-family: "Cormorant Garamond", sans-serif;    
+	font-size: 6em;
+    	font-weight: 700;
+    	letter-spacing: .2em;
 }
 
 h2 {
