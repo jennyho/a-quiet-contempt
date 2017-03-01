@@ -36,9 +36,9 @@ h1 {
 	display: block;
 	margin: 0 auto;
     text-align: center;
-    font-family: "Cormorant Garamond", sans-serif;
+    font-family: "Garamond", serif;
     font-size: 6em;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: .2em;
 }
 
@@ -136,7 +136,7 @@ h4 {
 }
 
 p {
-    font-family: "Cormorant Garamond", sans-serif;
+    font-family: "Garamond", serif;
     font-size: 1em;
     font-style: italic;
     letter-spacing: .1em;
@@ -159,7 +159,7 @@ p {
 }
 
 .number {
-    font-family: "Cormorant Garamond", sans-serif;
+    font-family: "Garamond", serif;
     font-size: 2.5em;
     top: 0%;
     z-index: 500;
